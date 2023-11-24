@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&family=Source+Sans+Pro:ital,wght@0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+     position: absolute; 
+    background-color: rgb(206, 205, 205);
+    /* width: 200px;; */
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+ padding: 10px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px ;
+    padding: 20px;
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color: rgb(78, 71, 71);
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.infoContainer{
+        /* background-color: red; */
+        height: 50vh;
+        width: 150vh;
+        margin: 85px auto;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 200px;
+}
+
+.container{
+    display: flex;
+}
+
+.devInfo{
+font-size: 10px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+font-family: 'Source Code Pro', monospace;
+}
+.hello{font-size: 3em;
+  font-weight: 29;
+}
+.name{
+    font-size: 2.5em;
+    font-weight: bold ;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+ 
+.intro{
+    padding-inline: 20px;
+    background-color: antiquewhite;
+}
+.about{
+    font-size: 2em;
+}
+.moreabout{
+    font-size: 2em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    margin-top: 23px;
+}
+.buttons{
+    margin-top: 34px;
+}
+.buttons button{
+    padding: 8px 14px;
+    border-radius: 30%;
+    color: aliceblue;
+    background-color: dodgerblue;
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.buttons :hover{
+    color: dodgerblue;
+    background-color: aliceblue;
+}
+
+.devPic img{
+    height:"60vh" 
+}
+.contactform{
+    margin-left: 150px;
+    /* padding: 0 34px; */
+    padding-top: 114px;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+width: 26vw;
+border-radius: 5px;
+margin: 6px 0 0 0;
+padding: 3px;
+
+}
+#emailHelp{
+    font-size: 11px;
+    color: rgb(68, 68, 134);
+    margin: 3px 0 0;
+}
+#form-check {
+flex-direction:row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px;
+}
+.btn{
+    width: 124px;
+    padding: 8px 14px;
+    border-radius: 30%;
+    color: aliceblue;
+    background-color: dodgerblue;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -11px;
+    margin-bottom: -11px;
+}
+   
+.btn :hover{
+    color: dodgerblue;
+    background-color: aliceblue;
+}
+
+/* blog css */
+
+.blogContainer{
+ margin-left: 200px;
+}
+
+.blogitems{
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 23px;
+    
+}
+
+ p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* intro css */
+.intro{
+    margin-left: 200px;
+}
+.skillcontainer{
+    padding: 12px;
+}
+.skill{
+    height: 6px;
+    width: 265px ;
+    background-color: red;
+    display: flex;
+    border: 2px solid black;
+}
+.skillitems{
+    display: flex;
+    align-items: center;
+}
+.hundred{
+    width: 265px;
+    background-color: aqua;
+}
+
+.t5{
+    width: 130px;
+    background-color: aqua; 
+}
+
+.t25{
+    width: 65px;
+    background-color: aqua;  
+}
+
+@media (max-width:800px) {
+    /* *{
+        background-color: rgb(235, 156, 156);
+    }
+    .sidebar{
+        transform: translate(-443px,0);
+        position: absolute;
+    } */
+    .devInfo{
+        font-size: 8px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro, .blogContainer,.contactform{
+        margin:50px 8px;
+    }
+}
+/* png css */
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 120px;
+}
+.sidebarGo{
+    transform: translate(-443px,0);
+    position: absolute;
+}
